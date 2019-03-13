@@ -5,7 +5,7 @@
                                              ];
 
                        foreach($web_servers as $k=>$v){
-                       $cmd = 'ssh '.$v.'"cd /home/wwwroot/default/shop07 && git pull" ';
+                       $cmd = 'ssh '.$v.'"cd /home/wwwroot/default/api && git pull" ';
                                     echo $cmd;   echo '</br>';
                                       $res = shell_exec($cmd);
                                           echo $res; echo '</br>';
